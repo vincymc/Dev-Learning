@@ -1,6 +1,23 @@
 ﻿body {
     font-family: 'Open Sans', sans-serif;
     padding-top:60px;
+    position:relative;
+}
+html,
+body{
+    height:100%;
+}
+header{
+    display:block;
+    position:relative;
+    width:auto;
+    height:auto;
+    /*padding:100px 0;
+    min-height:100%;*/
+    background:no-repeat center center;
+    background-attachment:scroll;
+    background-color:#222;
+    background-size:cover;
 }
 .navbar{
     margin-bottom :0px;
@@ -19,6 +36,86 @@
     padding-bottom:5px;
     padding-top:5px;
     opacity:0.9;
+}
+.img-responsive{
+    margin:0px auto;    
+    box-shadow:rgba(0,0,0,0.5) 10px 10px 60px;
+}
+.fill-screen{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    height:100%;
+}
+.title-row{
+    position:relative;
+    min-height:300px;
+}
+.title-image {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;    
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.scroll-button{
+    position:absolute;
+    bottom:80px;
+    width:100%;
+    text-align:center;    
+}
+.scroll-button i{
+    color:#ffffff;
+}
+.scroll-button i:hover{
+    color:honeydew;
+}
+.fixed-attachment{
+    background-attachment:fixed;
+}
+@media (max-width:1024px){
+    .fixed-attachment{
+    background-attachment:scroll;
+    }
+}
+.text-banner{
+    text-align:center;
+    margin:40px 20px;
+}
+.text-banner h1{
+    font-size:44px;
+}
+.text-banner p{
+    font-size:18px;
+}
+.activity-section{
+    margin:50px;
+}
+.activity-element{
+    text-align:center;
+}
+.activity-element img {
+    width: 150px;
+    height: 150px;
+}
+#carousel{
+    margin:20px 10px; 
+    /*height:400px;*/  
+    position:relative;
+}
+#carousel img{
+    width:100%;
+    margin:auto;
+    /*position:absolute;*/
+    /*width:100%;*/
+    /*height:auto;*/
+}
+.contact-us{
+    text-align:center;
+    margin:50px;
 }
 footer{
     background-color:#333;
